@@ -5,8 +5,10 @@ title: Malena Maffei
 <div class="blurb">
 	<h1>Hi there, I'm Malena Maffei</h1>
 	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+    <ul>
     {% for repository in site.github.public_repositories %}
-        * {{ repository.name }}
+        <li>{{ repository.name }}</li>
     {% endfor %}
+    </ul>
 </div><!-- /.blurb -->
 
